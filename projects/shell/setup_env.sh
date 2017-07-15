@@ -49,7 +49,7 @@ SQLITE_DB=`pwd`/twitter-movie-ratings.db && cd .. && \
 wget -c https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-5.5.0.tar.gz && tar -zxvf elasticsearch-5.5.0.tar.gz && elasticsearch-5.5.0/bin/elasticsearch -d && \
 echo "##### STARGING ELASTICSEARCH #####" && \
 
-echo "Wait 10sec please........" && sleep 10 && \
+echo "Wait 1min please........" && sleep 60 && \
 
 # 9) Making the initial dump and send it to elastisearch:
 mkdir dump && cd dump && \
@@ -57,7 +57,8 @@ java  -cp ../data-dump/target/data-dump-0.0.1-SNAPSHOT-jar-with-dependencies.jar
 curl -s -XPOST http://localhost:9200/twitter/_bulk --data-binary @dump.elk && echo "##### Data imported ok ######" && cd .. && \
 
 # 10) Start stats-service project:
-nohup java -jar stats-service/target/stats-service-0.0.1-SNAPSHOT.jar > stats-service/log.log && \
+#nohup java -jar stats-service/target/stats-service-0.0.1-SNAPSHOT.jar > stats-service/log.log 
+java -jar stats-service/target/stats-service-0.0.1-SNAPSHOT.jar && \
 
 # 11) Start the update Service (under development)
 
