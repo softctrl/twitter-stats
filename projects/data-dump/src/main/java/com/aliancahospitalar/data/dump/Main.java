@@ -34,6 +34,7 @@ public class Main {
 		// args = new String[] { "twitter-movie-ratings.db", "bulkinsert.dump" };
 
 		if (args.length != 2) {
+			System.out.println("So, where is the SQLite file and the file that i need to create?");
 			System.exit(-1);
 			return;
 		}
