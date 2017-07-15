@@ -9,6 +9,7 @@ wget -c https://raw.githubusercontent.com/softctrl/twitter-stats/master/projects
 ./setup_env.sh
 ```
 
+Also you can use the [insomnia](https://insomnia.rest/) with the provided [Insomnia_2017-07-15.json](https://raw.githubusercontent.com/softctrl/twitter-stats/master/Insomnia_2017-07-15.json) to make some tests.
 
 You need to use a machine:
 
