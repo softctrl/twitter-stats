@@ -17,5 +17,27 @@ You need to use a machine:
 2) With wget, nohup, unzip and all utils that a regular linux distribuition need to have.
 3) Access to a valid internet connection.
 
+So, the service will be running on the 8070 port and you can make tests on console:
+```
+curl --request GET \
+  --url 'http://localhost:8070/movies/best?size=2'
+  
+curl --request GET \
+  --url http://localhost:8070/genres/best
 
+curl --request GET \
+  --url http://localhost:8070/genres/countmovies
+
+curl --request GET \
+  --url 'http://localhost:8070/genres/ratingavgbygenre?id=20'
+
+curl --request GET \
+  --url http://localhost:8070/movies/ratingavgyear
+
+curl --request GET \
+  --url http://localhost:8070/movies/countbyyear
+
+curl --request GET \
+  --url http://localhost:8070/movies/countbydecade
+```
 Under development.
