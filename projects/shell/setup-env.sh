@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/sh
 
 ## configure development env:
 LOCAL_DIR=`pwd`
