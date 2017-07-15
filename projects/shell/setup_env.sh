@@ -1,5 +1,7 @@
+#! /bin/bash
+
 ## configure development env:
-LOCAL_DIR=`pwd`
+LOCAL_DIR=`pwd` && echo "############ PAY ATTENTION HERE: ${LOCAL_DIR} ###############################" && \
 
 ## Install all we need first:
 
@@ -18,7 +20,7 @@ export PATH="${PATH}:${LOCAL_DIR}/apache-maven-3.3.9/bin" &&  which mvn && echo 
 ############################
 
 ## 1) first clone my repo:
-git clone https://github.com/softctrl/twitter-stats.git && \ cd twitter-stats/projects && export PRJ=`pwd` && \
+git clone https://github.com/softctrl/twitter-stats.git && cd twitter-stats/projects && export PRJ=`pwd` && \
 
 ## 2) Download fly-rest and sc-utils-java libs (mypreciouslib... :D ) I use this libs on this project:
 mkdir libs && cd libs && git clone https://github.com/softctrl/sc-utils-java.git && cd sc-utils-java/sc-utils-java && mvn install && cd ../.. && \
