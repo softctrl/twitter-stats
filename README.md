@@ -43,4 +43,13 @@ curl --request GET \
 
 Also i put a vagrant [machine](https://github.com/softctrl/twitter-stats/tree/master/ubuntu-vagrant) that you can use to test this project.
 
+Execute this:
+
+```
+cd ubuntu-vagrant/
+vagrant up
+```
+
+then in a few moments (or hours :D ) you can test in your browser on the localhost too.
+
 Under development.
