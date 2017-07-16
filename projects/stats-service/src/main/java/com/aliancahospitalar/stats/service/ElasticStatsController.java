@@ -22,7 +22,7 @@ public class ElasticStatsController {
 
 	/**
 	 * 1. Quais os filmes com melhor avaliação média? GET
-	 * /twitter/movie-sts/_search?sort=avg_rating:desc&size=20
+	 * GET /twitter/movie-sts/_search?sort=avg_rating:desc&size=20
 	 * 
 	 * @param size
 	 */
