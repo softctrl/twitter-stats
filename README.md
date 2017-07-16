@@ -40,4 +40,7 @@ curl --request GET \
 curl --request GET \
   --url http://localhost:8070/movies/countbydecade
 ```
+
+Also i put a vagrant [machine](https://github.com/softctrl/twitter-stats/tree/master/ubuntu-vagrant) that you can use to test this project.
+
 Under development.
