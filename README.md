@@ -50,6 +50,6 @@ cd ubuntu-vagrant/
 vagrant up
 ```
 
-then in a few moments (or hours :D ) you can test in your browser on the localhost too.
+Then in a few moments (or hours :D ) you can test in your browser on the localhost too.
 
 Under development.
